@@ -14,7 +14,7 @@
   }
   
   h1 {
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-size: clamp(2rem, 3vw + 2rem, 5rem);
     color: white;
     position: relative;
     font-family: "Source Code Pro", monospace;
@@ -36,25 +36,25 @@
   h1::before {
     background: #28282B;
     animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards;
+      steps(var(--typewriterCharacters)) 1.3s forwards;
   }
   
   h1::after {
     width: 0.125em;
     background: white;
     animation: typewriter var(--typewriterSpeed)
-        steps(var(--typewriterCharacters)) 1s forwards,
-      blink 750ms steps(var(--typewriterCharacters)) infinite;
+        steps(var(--typewriterCharacters)) 1.3s forwards,
+      blink 500ms steps(var(--typewriterCharacters)) infinite;
     color: white;
   }
   
   .subtitle {
     color: hsl(0 0% 0% / 0.7);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: 400;
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(6rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
   }
   
@@ -85,7 +85,7 @@
   
     &:hover,
     &:focus {
-      color: teal;
+      color: white;
     }
   }
   
